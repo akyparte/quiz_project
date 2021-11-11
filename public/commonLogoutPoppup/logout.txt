@@ -1,0 +1,10 @@
+ <div id = 'logout-poppup-frame'>
+        <div id = 'logout-poppup-container'>
+         <i class="fas fa-times" id ='logout-poppup-close'></i>
+            <span id = 'logout-username'>
+            </span>
+            <button id = 'logout-btn'>
+               logout
+            </button>
+        </div>
+    </div> 

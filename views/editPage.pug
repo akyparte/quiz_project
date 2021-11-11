@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title scores
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="edit.css")
+		script(defer type="text/javascript" src="edit.js")
+	body
+		div#frame
+			div#nav-bar
+				button#go-back back
+				span#username= username
+			div#body-container
+				h1#quiz_name= quizName
+				- let options = ['a:','b:','c:','d:','e:'];
+				- options = options.slice(0,numOfOpt);
+				each n,i in quizArray
+					div.edit-quiz-container
+						span.index= i+1
+						div.edit-box
+							span Q:
+							input(type="text" value=n.question)
+						each op,optI in options
+							div.edit-box
+								span= op
+								input(type="text" value=n[`option${optI+1}`])
+						div.edit-box
+							span ans:
+							input(type="text" value=n.answer)
+				button#save-changes save changes

@@ -1,0 +1,50 @@
+
+ <div id = 'edit-pop-pup-frame'>
+       
+       <div id = 'edit-container'>
+
+           <div id = 'select-quiz-list-container'>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p> science quiz</p>
+               </div>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p> math quiz</p>
+               </div>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p> math quiz part2</p>
+               </div>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p> class quiz</p>
+               </div>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p> collections wuiz</p>
+               </div>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p> biomill quiz</p>
+               </div>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p>range quiz</p>
+               </div>
+               <div class = 'edit-quiz-box'>
+                   <input type="checkbox" name=""> 
+                   <p> science quiz</p>
+               </div>
+               
+           </div>
+           
+          
+           <div id = 'edit-pop-pup-buttons'>
+                <button id = 'edit-poppup-cancel-btn'> calcel</button>
+                <button id = 'edit-poppup-procede-btn'> procede </button>
+           </div>
+
+       </div>
+    </div>   
+

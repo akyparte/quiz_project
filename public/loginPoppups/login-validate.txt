@@ -1,0 +1,8 @@
+<div id = 'login-validate-poppup-frame'>
+        <div id = 'login-validate-poppup-container'>
+           <span id = 'login-validate-message'> message </span>
+            <button id = 'ok'>
+               understand
+            </button>
+        </div>
+    </div>

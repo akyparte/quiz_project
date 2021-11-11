@@ -1,0 +1,10 @@
+<div id = 'leave-quiz-poppup-frame'>
+       <div id = 'leave-poppup-container'>
+
+         <span >changes won't be saved </span>       
+       <div id = 'leave-poppup-btn-container'>
+         <button id = 'cancel'>cancel</button>
+         <button id = 'submit'>leave</button>
+       </div>
+    </div>  
+    </div>

@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		title scores
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="play-quiz.css")
+		script(defer type="text/javascript" src="play-quiz.js")
+	body
+		div#frame
+			div#nav-bar
+				button#go-back back
+				span#username= username
+			div#body-container
+				h1#quiz-name= quizName
+				- let options = ['A:','B:','C:','D:','E:'];
+				- options = options.slice(0,numOfOpt);
+				each e,i in quizArray
+					div.quiz-container
+						p
+							span= `[${i+1}]`
+							| #{e.question}
+						div.options-container
+							each op,oI in options
+								div.option
+									span= options[oI]
+									p= e[`option${oI+1}`]
+				div#name-and-btn-container
+					input(type="text" id = 'player_name')
+					button#submit-btn submit

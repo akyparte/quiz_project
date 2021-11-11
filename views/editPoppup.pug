@@ -1,0 +1,10 @@
+div#edit-pop-pup-frame
+	div#edit-container
+		div#select-quiz-list-container
+			each n in quizNames
+				div.edit-quiz-box
+					input(type="checkbox")
+					p= n
+		div#edit-pop-pup-buttons
+			button#edit-poppup-cancel-btn cancel
+			button#edit-poppup-procede-btn procede

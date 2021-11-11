@@ -1,0 +1,10 @@
+<div id = 'save-leave-quiz-poppup-frame'>
+       <div id = 'save-leave-poppup-container'>
+
+         <span id = 'p-m'>message</span>       
+       <div id = 'save-leave-poppup-btn-container'>
+         <button id = 'btn1'>btn-name</button>
+         <button id = 'btn2'>btn-name</button>
+       </div>
+    </div>  
+    </div>

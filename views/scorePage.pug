@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		title scores
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="scores.css")
+		script(defer type="text/javascript" src="scores.js")
+	body
+		div#frame
+			div#nav-bar
+				div#search-bar-container
+					button#go-back back
+					input(type="text" name="search" placeholder="search..." id = 'search-filter')
+				div#nav-options
+					h1#username= username
+			div#body-container
+				h1 Scores list
+				div#quiz-list-container
+					if quizNames.length
+						each e,i in quizNames
+							div.quiz
+								span= i+1
+								span= e
+					else
+						div#no-score no scores available !

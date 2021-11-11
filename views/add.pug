@@ -1,0 +1,36 @@
+doctype html
+html
+	head
+		meta(http-equiv='X-UA-Compatible' content='text/html' charset='UTF-8')
+		title add
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href='https://fonts.googleapis.com/css2?family=Noto+Sans\&display=swap' rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="add.css")
+		script(defer type="text/javascript" src="add.js")
+	body
+		div#frame
+			div#nav-bar
+				button#go-back back
+				span#username= username
+			div#body-container
+				div#quiz-container
+					h1#question-index(title='1' nq=noq no=noo qn=qName) question1
+					div#qn-opt-ans-container
+						div#question-box
+							span Q:
+							input(type="text" name="question")
+						div#options-answer
+							- let options = ['a:','b:','c:','d:','e:'];
+							- options = options.slice(0,noo);
+							each n,i in options
+								div.option-box
+									span=n
+									input(type="text" name="option")
+							div#answer-box
+								span ans:
+								input(type="text" name="answer")
+					div#back-sub-button-container
+						button#back-quiz back
+						button#next-quiz next

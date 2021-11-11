@@ -1,0 +1,22 @@
+<div id = 'add-pop-pup-frame'>
+       <div id = 'add-pop-pup-container'>
+         <div id = 'quiz-name-box'>
+            <input type='text' id = 'quiz-name' placeholder='quiz name'>
+         </div>
+        <div class = 'q-container'>
+              <span>number of question</span>
+              <input type="text" name="" placeholder="0" id = 'num-questions'>
+             
+        </div>
+        <div class = 'q-container'>
+              <span>number of options</span>
+              <input type="text" name="" placeholder="0" id = 'num-options'>
+             
+        </div>
+        <div id = 'add-poppup-btn-container'>
+               <button id = 'add-poppup-cancel-btn'>cancel</button>
+               <button id = 'add-poppup-submit-btn'>submit</button>
+        </div>
+    </div>    
+    </div>
+

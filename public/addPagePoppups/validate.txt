@@ -1,0 +1,9 @@
+<div id = 'validate-quiz-poppup-frame'>
+       <div id = 'validate-poppup-container'>
+          <div id = 'message-box'>
+           </div>        
+       <div id = 'validate-poppup-btn-container'>
+         <button id = 'ok'>understand</button>
+       </div>
+    </div>  
+    </div>

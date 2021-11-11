@@ -1,0 +1,6 @@
+    <div id = 'score-poppup-frame'>
+        <div id = 'score-container'>
+            <span id = 'score-message'>wisky you scored 5 out of 10</span>
+            <button id ='score-btn'>ohaky</button>
+        </div>
+    </div>

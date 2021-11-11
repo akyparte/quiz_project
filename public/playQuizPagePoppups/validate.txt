@@ -1,0 +1,8 @@
+<div id = 'validate-poppup-frame'>
+        <div id = 'validate-poppup-container'>
+           <span> select all quizes </span>
+            <button id = 'ok'>
+               understand
+            </button>
+        </div>
+    </div>

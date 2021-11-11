@@ -1,0 +1,10 @@
+<div id = 'delete-pop-pup-frame'>
+        
+        <div id = 'delete-container'>
+            <p> are you sure ?</p>
+            <div id = 'delete-btn-container'>
+                <button id = 'delete_poppup_cancel_btn'>cancel</button>
+                <button id = 'delete_poppup_delete_btn'>delete</button>
+            </div>
+        </div>
+    </div>

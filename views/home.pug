@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title homepage
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="home.css")
+		script(defer type="text/javascript" src="home.js")
+	body
+		div#frame
+			div#nav-bar
+				div#search-bar-container
+					div#search-btn-container
+						input(type="text" name="search" placeholder="search..." id ="search-filter")
+				div#nav-options
+					a(href="scorepage") scores
+					h1(id = 'username')= username
+			div#body-container
+				div#add-quiz-btn-container
+					button#add-btn add
+					button#edit-btn edit
+				div#quiz-container
+					if quizes.length
+						each n,i in quizes
+							div.quiz
+								div.quiz-name-index
+									span=i+1
+									span=n
+								button delete
+					else
+						div#no-quiz sorry currenly no quizes available click on add button to add quizes

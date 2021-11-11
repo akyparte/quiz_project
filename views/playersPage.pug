@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title scores
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="players.css")
+		script(defer type="text/javascript" src="players.js")
+	body
+		div#frame
+			div#nav-bar
+				button#go-back back
+				div#nav-options
+					span#reset reset
+					span#username= username
+			div#body-container
+				div#quiz-name-container
+					span#quiz_name= quizName
+				if total
+					div#heading-container
+						span players
+						span out of :#{total}
+				div#players-list-container
+					if scoresArray.length
+						each e,i in scoresArray
+							div.player
+								span= e.playerName
+								span= e.playerScore
+					else
+						div#no-players-container
+							span no players played this quiz
