@@ -102,7 +102,7 @@ app.post('/signup',async (req,res) => {
     
 });
 
-
+// this is how i am going to practice
 
 
 
