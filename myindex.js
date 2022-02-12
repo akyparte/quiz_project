@@ -9,26 +9,23 @@ let database = require('./database.js');
 let session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 let app = express();
-
-
-const options = {                 // setting connection options
-    host: 'localhost',
-    user: 'root',
-    password: '12345678',
-    database: 'userdatas',
-};
-const sessionStore = new MySQLStore(options);
+let onlineUrl = 'mongodb+srv://akshayPP:Wisky%40mazza%40kutra@cluster0.idhhq.mongodb.net/quizUsers?retryWrites=true&w=majority';
+let uri = 'mongodb://127.0.0.1:27017/quizUsers';
 
 app.set('views','./views');
 app.set('view engine','pug');
 
+let store = mongodbSession({
+    uri:onlineUrl,
+    collection:'userSessions'
+})
 
 app.use(session({
     secret: "mynewproject",
     saveUninitialized:false,
     cookie: { maxAge: 1000 * 60 * 60 * 24 },
     resave: false,
-    store:sessionStore,
+    store,
 }));
 
 app.use(express.static('public'));
